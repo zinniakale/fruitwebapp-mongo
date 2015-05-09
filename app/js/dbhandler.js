@@ -7,12 +7,17 @@ DBHandler.prototype = {
 		switch(dbms) {
 			case 'mysql':
 				this.define.dbms = 'mysql';
+				this.define.server = 'localhost://cmsc191_exer6/mysql/index.php';
+				this.define.user = "root";
+				this.define.pword = "";
 				break;
 			case 'mongodb':
 				this.define.dbms = 'mongodb';
+				this.define.server = 'localhost://cmsc191_exer6/mongodb/index.php';
 				break;
 			case 'couchdb':
 				this.define.dbms = 'couchdb';
+				this.define.server = 'localhost://cmsc191_exer6/couchdb/index.php';
 				break;
 		}
 	},
